@@ -11,8 +11,11 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "esModuleInterop": true,
-    "outDir": "./lib"
+    "outDir": "./dist"
   },
+  "files": [
+    "src/global.d.ts"
+  ],
   "include": [
     "src/**/*"
   ],

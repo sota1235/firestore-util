@@ -1,12 +1,10 @@
 {
-  "name": "ts-simple-boilderplate",
-  "version": "0.0.1",
-  "description": "Simple boilerplate for @sota1235",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  },
+  "private": true,
+  "name": "firestore-cli",
+  "description": "Simple script just for debugging",
   "dependencies": {
+    "firebase-admin": "^10.0.0",
+    "ts-node": "^10.3.0",
     "typescript": "^4.0.0"
   },
   "devDependencies": {
@@ -17,14 +15,10 @@
     "jest": "27.2.5",
     "lint-staged": "11.2.3",
     "prettier": "2.4.1",
-    "ts-jest": "27.0.5",
-    "ts-loader": "9.2.6",
-    "webpack": "5.58.2",
-    "webpack-cli": "^4.3.1"
+    "ts-jest": "27.0.5"
   },
   "scripts": {
-    "build": "webpack",
-    "watch": "webpack --progress --color --watch",
+    "start": "ts-node --files -r ./src/index.ts",
     "fix": "npm run prettier && npm run eslint:fix",
     "lint": "npm run eslint",
     "eslint": "eslint 'src/**/*.ts'",
@@ -33,7 +27,6 @@
     "test": "jest",
     "test:ci": "jest -c ./jest.config.ci.js"
   },
-  "keywords": [],
   "author": "@sota1235",
   "license": "MIT",
   "lint-staged": {
