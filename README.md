@@ -16,6 +16,11 @@ npm i
 FIREBASE_PROJECT_ID={Your firebase project name} npm run start
 ```
 
+You can also specify environment variables below.
+
+- `FIRESTORE_EMULATOR_HOST`
+  - https://firebase.google.com/docs/emulator-suite/connect_firestore?hl=ja#admin_sdks
+
 ### API
 
 See [src/global.d.ts](./src/global.d.ts).
