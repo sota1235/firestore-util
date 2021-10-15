@@ -3,11 +3,17 @@ firestore-cli
 
 Just simple script for debugging.
 
+### Setup
+
+You need to login via firebase-tools.
+
+https://firebase.google.com/docs/cli
+
 ### Usage
 
 ```
 npm i
-npm run start
+FIREBASE_PROJECT_ID={Your firebase project name} npm run start
 ```
 
 ### API
